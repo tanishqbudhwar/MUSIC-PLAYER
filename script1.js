@@ -3,11 +3,12 @@ var songs = ["1.mp3","2.mp3","3.mp3","4.mp3","5.mp3","6.mp3","7.mp3","8.mp3","9.
 var i=0;
 const playIcon = $("#play-button");
 const pauseIcon = $("#pause-button");
+var song = new Audio();
 var next_song = new Audio();
 var previousSong = new Audio();
 pauseIcon.show();
 $("#next").click(function(){
-    next_song.pause();
+    song.pause();
     previousSong.pause();
     var n = Math.floor(Math.random()*songs.length);
     next_song.src = "./audio/" + songs[n];
