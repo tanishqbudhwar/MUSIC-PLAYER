@@ -3,6 +3,8 @@ var playedSong = [];
 var player = new Audio();
 const playIcon = $("#play-button");
 const pauseIcon = $("#pause-button");
+const volume = $("#volume-slider");
+const slider = $("#slider");
 
 //next-button
 $("#next").click(function(){
@@ -226,5 +228,21 @@ $("#pause-play").click(function(){
         player.pause();
         pauseIcon.hide();
         playIcon.show();
+    }
+})
+
+//volume-slider
+volume.on("input", function(){
+    player.volume = this.value / 100;
+})
+
+//slider
+player.ontimeupdate = function(){
+    slider.val((player.currentTime / player.duration) * 100);
+}
+slider.on("input",function(){
+    player.currentTime = (this.value / 100) * player.duration;
+    if(this.value == 100){
+        $("#next").click();
     }
 })
