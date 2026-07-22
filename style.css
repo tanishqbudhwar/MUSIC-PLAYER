@@ -14,10 +14,14 @@ body{
     align-items: center;
 }
 #pause-play{
-    height:50px;
     width:50px;
-    border-radius: 50%;
-    border:transparent
+    height:50px;
+    border:none;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
 }
 .bi bi-play-circle{
     height:50px;
@@ -42,6 +46,8 @@ body{
 }
 #nav{
     padding-top:20px;
+    display:flex;
+    flex-direction: row;
 }
 #photo-img{
     height:300px;
@@ -92,3 +98,153 @@ body{
     align-self:center;
     color:white;
 }
+#pause-play svg{
+    margin:0;
+    padding:0;
+    position: absolute;
+
+}
+
+.gradient-background1 {
+  background: linear-gradient(300deg, #FFBE91, #FFDDB0, #FFFCE1);
+  background-size: 180% 180%;
+  animation: gradient-animation1 18s ease infinite;
+}
+
+@keyframes gradient-animation1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background1 {
+  background: linear-gradient(300deg, #FFBE91, #FFDDB0, #FFFCE1);
+  background-size: 180% 180%;
+  animation: gradient-animation1 18s ease infinite;
+}
+
+@keyframes gradient-animation1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.gradient-background1 {
+  background: linear-gradient(300deg, #FFBE91, #FFDDB0, #FFFCE1);
+  background-size: 180% 180%;
+  animation: gradient-animation1 18s ease infinite;
+}
+
+@keyframes gradient-animation1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background2 {
+  background: linear-gradient(300deg, #0F3040, #464858, #D99B7F);
+  background-size: 180% 180%;
+  animation: gradient-animation2 18s ease infinite;
+}
+
+@keyframes gradient-animation2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background3 {
+  background: linear-gradient(300deg, #321E48, #43637E, #65DCD5);
+  background-size: 180% 180%;
+  animation: gradient-animation3 18s ease infinite;
+}
+
+@keyframes gradient-animation3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background4 {
+  background: linear-gradient(300deg, #37353E, #44444E, #715A5A);
+  background-size: 180% 180%;
+  animation: gradient-animation4 18s ease infinite;
+}
+
+@keyframes gradient-animation4 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background5 {
+  background: linear-gradient(300deg, #27391C, #255F38, #1F7D53);
+  background-size: 180% 180%;
+  animation: gradient-animation5 18s ease infinite;
+}
+
+@keyframes gradient-animation5 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background6 {
+  background: linear-gradient(300deg, #3A0519, #670D2F, #EF88AD);
+  background-size: 180% 180%;
+  animation: gradient-animation6 18s ease infinite;
+}
+
+@keyframes gradient-animation6 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
